@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(226, 255, 4);
+    margin: 0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation: square 7s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:rgb(29, 252, 241); left:600px; top:0px;}
+    50%  {background-color:blue; left:400px; top:700px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+.rectangle {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    background-color: red;
+    animation: rectangle 7s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes rectangle {
+    0%   {background-color:rgb(33, 224, 253); left:100px; top:900px;}
+    25%  {background-color:rgb(0, 0, 0); left:600px; top:200px;}
+    50%  {background-color:blue; left:400px; top:700px;}
+    75%  {background-color:rgb(41, 255, 41); left:400px; top:100px;}
+    100% {background-color:rgb(255, 0, 225); left:0px; top:0px;}
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: orange;
+    border-radius: 50%;
+    animation: circle 7s infinite;
+}
+
+@keyframes circle {
+    0%   {background-color: orange; left: 0px; top: 0px;}
+    25%  {background-color: rgb(255, 189, 68); left: 300px; top: 600px;}
+    50%  {background-color: purple; left: 500px; top: 300px;}
+    75%  {background-color: pink; left: 100px; top: 500px;}
+    100% {background-color: orange; left: 0px; top: 0px;}
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid yellow;
+    position: relative;
+    animation: triangle 7s infinite;
+}
+
+@keyframes triangle {
+    0%   {border-bottom-color: yellow; left: 800px; top: 400px;}
+    25%  {border-bottom-color: rgb(128, 0, 128); left: 200px; top: 300px;}
+    50%  {border-bottom-color: rgb(0, 128, 0); left: 500px; top: 700px;}
+    75%  {border-bottom-color: rgb(255, 0, 0); left: 100px; top: 100px;}
+    100% {border-bottom-color: rgb(15, 115, 120); left: 400px; top: 400px;}
+}
